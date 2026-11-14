@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huellitas & Co. | Tienda de Mascotas</title>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Estilos CSS Puros -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-paw logo-accent"></i>
+            Huellitas<span class="logo-accent">.co</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <button class="cart-btn" aria-label="Carrito de compras">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge">3</span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="hero-text" data-aos="fade-down" data-aos-duration="1000">
+            <span class="hero-badge">🐾 Todo lo que tu mascota ama</span>
+            <h1>Amor y cuidado en cada <span class="text-highlight">detalle</span></h1>
+            <p>Alimentos premium, juguetes interactivos y accesorios ecológicos pensados para el bienestar de tu mejor
+                amigo.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary">Ver Productos <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#categorias" class="btn btn-secondary">Explorar Categorías</a>
+            </div>
+        </div>
+
+        <div class="hero-media" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <i class="fa-solid fa-dog hero-icon"></i>
+        </div>
+    </header>
+
+    <!-- Categorías -->
+    <section id="categorias" class="section">
+        <header class="section-header" data-aos="fade-up">
+            <h2>Explora por Categoría</h2>
+            <p>Encuentra exactamente lo que tu compañero necesita</p>
+        </header>
+
+        <div class="categories-grid">
+            <article class="card category-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-dog category-icon"></i>
+                <h3>Perros</h3>
+                <p class="product-description">Todo para tu amigo perruno.</p>
+            </article>
+
+            <article class="card category-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-cat category-icon"></i>
+                <h3>Gatos</h3>
+                <p class="product-description">Lo mejor para tu compañero felino.</p>
+            </article>
+
+            <article class="card category-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-solid fa-bowl-food category-icon"></i>
+                <h3>Nutrición</h3>
+                <p class="product-description">Alimentos cuidadosamente seleccionados. </p>
+            </article>
+
+            <article class="card category-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fa-solid fa-pump-soap category-icon"></i>
+                <h3>Higiene</h3>
+                <p class="product-description">Cuidados esenciales para una mascota saludable. </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section id="productos" class="section section-alt">
+        <header class="section-header" data-aos="fade-up">
+            <h2>Productos Destacados</h2>
+            <p>Los favoritos de la comunidad de mascotas</p>
+        </header>
+
+        <div class="products-grid">
+            <article class="card product-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="product-image"><i class="fa-solid fa-bone product-icon"></i></div>
+                <span class="product-tag">Perros</span>
+                <h3>Snacks Naturales de Pavo</h3>
+                <p class="product-description">100% orgánicos, ricos en proteína y bajos en grasa.</p>
+                <footer class="product-footer">
+                    <span class="product-price">$14.99</span>
+                    <button class="btn btn-primary btn-sm">Agregar</button>
+                </footer>
+            </article>
+
+            <article class="card product-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="product-image"><i class="fa-solid fa-feather product-icon"></i></div>
+                <span class="product-tag">Gatos</span>
+                <h3>Juguete Interactivo Plumas</h3>
+                <p class="product-description">Estimula los instintos de juego de tu felino.</p>
+                <footer class="product-footer">
+                    <span class="product-price">$19.50</span>
+                    <button class="btn btn-primary btn-sm">Agregar</button>
+                </footer>
+            </article>
+
+            <article class="card product-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="product-image"><i class="fa-solid fa-shower product-icon"></i></div>
+                <span class="product-tag">Higiene</span>
+                <h3>Champú Hipoalergénico</h3>
+                <p class="product-description">Fórmula suave con aloe vera para pieles sensibles.</p>
+                <footer class="product-footer">
+                    <span class="product-price">$16.00</span>
+                    <button class="btn btn-primary btn-sm">Agregar</button>
+                </footer>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer" data-aos="fade-up">
+        <a href="#" class="logo footer-logo">
+            <i class="fa-solid fa-paw logo-icon"></i>
+            Huellitas.co
+        </a>
+        <p>Esta página es una práctica con libreia AOS.</p>
+        <p class="footer-copy">© 2026 Huellitas & Co</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
